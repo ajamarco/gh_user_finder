@@ -2,7 +2,7 @@ class UI{
     constructor(){
         this.profile = document.getElementById("profile");
     }
-
+    //when a function is declared within a class, you cannot use 'function'
     showProfile(user){
         this.profile.innerHTML = `
         <div class="card card-body mb-3">
@@ -30,4 +30,13 @@ class UI{
     <div id="repos"></div>
         `;
     }
+
+    clearProfile(){
+        this.profile.innerHTML = '';
+    }
+
+    showAlert(){
+        
+    }
+
 }

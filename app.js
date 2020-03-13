@@ -16,12 +16,13 @@ function getUserInput(e){
     if (userText !== ""){
         github.getUser(userText).then(data => {
             if (data.profile.message === "Not Found"){
+                ui.showAlert("User not found");
                 //show alert
             }else{
                 ui.showProfile(data.profile);
             }
         });
     }else{
-        //clear profile
+        ui.clearProfile();
     }
 }
