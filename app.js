@@ -16,10 +16,11 @@ function getUserInput(e){
     if (userText !== ""){
         github.getUser(userText).then(data => {
             if (data.profile.message === "Not Found"){
-                ui.showAlert("User not found");
+                ui.showAlert(`User ${userText} not found`, 'alert alert-danger');
                 //show alert
             }else{
                 ui.showProfile(data.profile);
+                ui.showRepos(data.repos);
             }
         });
     }else{
