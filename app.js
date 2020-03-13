@@ -1,6 +1,8 @@
 //init github
 const github = new GitHub;
 
+//init UI
+const ui = new UI;
 
 //get the textbox
 const searchUser = document.getElementById('searchUser');
@@ -16,7 +18,7 @@ function getUserInput(e){
             if (data.profile.message === "Not Found"){
                 //show alert
             }else{
-                console.log(data.profile);
+                ui.showProfile(data.profile);
             }
         });
     }else{
