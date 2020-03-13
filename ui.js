@@ -8,14 +8,14 @@ class UI{
         <div class="card card-body mb-3">
         <div class="row">
             <div class="col-md-3">
-                <img src=${user.avatar_url} alt="" class="img-fluid mb-2">
-                <a href=${user.html_url} class="btn btn-primary btn-block" target="_blank">View Profile</a>
+                <img src=${user.avatar_url} alt="" class="img-fluid mb-4">
+                <a href=${user.html_url} class="btn btn-secondary btn-block mb-4" target="_blank">View Profile</a>
             </div>
             <div class="col-md-9">
-                <span class="badge badge-primary">Public Repos: ${user.public_repos}</span>
-                <span class="badge badge-primary">Public Gists: ${user.public_gists}</span>
-                <span class="badge badge-primary">Followers: ${user.followers}</span>
-                <span class="badge badge-primary">Following: ${user.following}</span>
+                <span class="badge badge-secondary">Public Repos: ${user.public_repos}</span>
+                <span class="badge badge-secondary">Public Gists: ${user.public_gists}</span>
+                <span class="badge badge-secondary">Followers: ${user.followers}</span>
+                <span class="badge badge-secondary">Following: ${user.following}</span>
                 <br><br>
                 <ul class="list-group">
                     <li class="list-group-item">Company: ${user.company}</li>
